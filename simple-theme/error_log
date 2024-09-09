@@ -1,0 +1,44 @@
+[27-Mar-2024 13:50:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 13:50:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 13:50:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 13:57:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 13:57:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 13:58:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 13:58:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 14:10:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 14:10:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 14:20:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1
+[27-Mar-2024 14:20:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hearst/public_html/hearst-solution-com/wp-content/themes/wpwp-theme/index.php on line 1

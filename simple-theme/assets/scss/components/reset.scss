@@ -1,0 +1,481 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  color: $a;
+  font-family: $font;
+  font-weight: 500;
+  height: auto;
+  min-height: 100vh;
+  background-color: $b;
+  position: relative;
+  line-height: 1;
+  @include flexbox();
+  @include flex-direction (column);
+  ::-moz-selection {
+    background: $a;
+    color: #ffffff;
+  }
+  ::selection {
+    background: $a;
+    color: #ffffff;
+  }
+}
+#wrap {
+  @include flex (1 0 auto);
+}
+mark {
+  background: none;
+}
+/* ==========================================================================
+   FORMS & TABLE & NAVIGATION
+   ========================================================================== */
+input, textarea, select {
+  outline: 0 none;
+  padding: 0 10px;
+  @include transition(all, .2s, ease-in-out);
+}
+input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='search'], input[type='tel'], textarea {
+  -webkit-appearance: none !important;
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-family: $font;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 400;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 30px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 17px 20px;
+  }
+  @include placeholder {
+    color: #8B9096;
+    font-family: $font;
+    font-size: 20px;
+    opacity: 1;
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+  &:focus {
+    border-color: black;
+  }
+}
+textarea {
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+  font-size: 20px;
+
+}
+input[type='submit'] {
+  -webkit-appearance: none;
+  max-width: 212px;
+  height: 72px;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid $b;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: $b;
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+    height: 49px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  &:hover {
+    color: $a;
+    background-color: $b;
+  }
+}
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+input[type='search'], input[type='search']::-webkit-search-decoration, input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none !important;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: decimal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1.2;
+  @media screen and (max-width: 1140px) {
+    font-size: 72px;
+  }
+  @media screen and (max-width: 992px) {
+    font-size: 64px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 56px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  @media screen and (max-width: 1140px) {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+  @media screen and (max-width: 992px) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 42px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.2;
+  @media screen and (max-width: 1140px) {
+    font-size: 28px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+p.above {
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-size: 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 576px) {
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+a {
+  color: $link;
+  outline: 0;
+  text-decoration: none;
+  @include transition();
+  &:hover {
+    outline: 0;
+  }
+}
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+strong, b {
+  font-weight: 600;
+}
+i {
+  font-style: normal;
+}
+@media screen and (min-width: $row) {
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #cccccc;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $a;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: darken($a, 5%);
+  }
+}
+
+.row1320{
+  width: 1320px;
+  max-width: 96%;
+  margin: 0 auto;
+  @include for-size(xs) {
+    max-width: 91.46666%;
+  }
+}
+
+.btn-transparent, .btn-white {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 14px;
+  line-height: 1;
+  transition: all 0.3s ease;
+  padding: 17px 31.5px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid $b;
+}
+.btn-transparent {
+  background-color: transparent;
+  font-size: 16px;
+  color: $b;
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 10.5px 23.5px;
+  }
+  &:hover {
+    color: $a;
+    background-color: $b;
+  }
+}
+.btn-white {
+  background-color: $b;
+  color: $a;
+  font-size: 20px;
+  height: 72px;
+  text-align: center;
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    height: 49px;
+    border-radius: 10px;
+    padding: 16px 23px;
+  }
+  &:hover {
+    color: $b;
+    background-color: transparent;
+  }
+}
+.home{
+  #logo{
+    pointer-events: none;
+  }
+}
+
+
+/* ==========================================================================
+   FANCY BOX
+   ========================================================================== */
+.fancybox__content>.carousel__button.is-close {
+  top: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #14171D;
+  border: 1px solid rgba(251, 251, 251, 0.3);
+  transition: all 0.3s ease;
+  &:hover{
+    opacity: 0.5;
+  }
+  @media screen and (max-width: 576px) {
+    top: 30px;
+    right: 30px;
+  }
+}
+.fancybox__slide{
+  padding: 20px calc((100vw - 96%) / 2);
+  @media screen and (max-width: 1140px) {
+    padding-top: 76px;
+  }
+  @media screen and (max-width: 576px) {
+    padding-left: calc((100vw - 91.4666%) / 2);
+    padding-right: calc((100vw - 91.4666%) / 2);
+  }
+}
+.fancybox__content :focus:not(.carousel__button.is-close){
+  outline: none;
+  box-shadow: none;
+}
+
+.with-fancybox{
+  .burger{
+    opacity: 0;
+  }
+}
+.fancybox__backdrop{
+  background: rgba(24, 24, 27, 0.7);
+  @media screen and (max-width: 576px) {
+    background: rgba(24, 24, 27, 0);
+  }
+}
+
+body.compensate-for-scrollbar{
+  overflow: unset!important;
+}
+body.compensate-for-scrollbar{
+  padding: 0!important;
+}
+
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+.wpcf7 {
+  user-select: none!important;
+  label {
+    display: block;
+    width: 100%;
+    input {
+     background-color: #14171D;
+      color: $b;
+      -webkit-appearance: none !important;
+      border: 1px solid rgba(251, 251, 251, 0.3);
+      font-family: $font;
+      font-size: 20px;
+      padding: 24px 40px;
+      width: 100%;
+      font-weight: 400;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      height: 72px;
+      @media screen and (max-width: 576px) {
+        margin-bottom: 30px;
+        height: 48px;
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 17px 20px;
+      }
+      @include placeholder {
+        color: #8B9096;
+        font-family: $font;
+        font-size: 20px;
+        opacity: 1;
+        @media screen and (max-width: 576px) {
+          font-size: 12px;
+        }
+      }
+      &:focus {
+        border-color: $b;
+      }
+    }
+    textarea {
+      background-color: #14171D;
+      color: $b;
+      resize: none;
+      width: 100%;
+      overflow: hidden;
+      min-height: 144px;
+      height: 144px;
+      transition: none;
+      margin-bottom: 80px;
+      -webkit-appearance: none !important;
+      border: 1px solid rgba(251, 251, 251, 0.3);
+      font-size: 20px;
+      padding: 24px 40px;
+      font-weight: 400;
+      border-radius: 12px;
+      @media screen and (max-width: 576px) {
+        min-height: 96px;
+        height: 96px;
+        margin-bottom: 194px;
+        padding: 14px 20px;
+        font-size: 14px;
+      }
+      &:focus {
+        border-color: $b;
+      }
+    }
+    .wpcf7-not-valid{
+      border-color: #FF0000FF;
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    background: transparent !important;
+    top: 78px !important;
+    color: #FF0000FF !important;
+    font-weight: 500 !important;
+    max-width: 100% !important;
+    font-size: 14px !important;
+    height: 16px !important;
+    line-height: 1.4 !important;
+    text-align: left!important;
+    left: 41px!important;
+    @media screen and (max-width: 576px) {
+      left: 21px!important;
+      font-size: 12px!important;
+      top: 54px !important;
+    }
+  }
+  .wpcf7-form {
+    .wpcf7-response-output {
+      display: none!important;
+    }
+  }
+}
+.in-active {
+  input[type='submit'] {
+    cursor: no-drop;
+    &:hover {
+      color: $b;
+      background-color: transparent;
+    }
+  }
+}
+.wpcf7.iphone {
+  label {
+    input {
+      @media screen and (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+    textarea {
+      @media screen and (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.block-editor .person-card .flex-wrapper {
+  flex-flow: nowrap;
+}
