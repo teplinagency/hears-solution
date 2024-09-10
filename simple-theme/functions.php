@@ -108,9 +108,9 @@ function my_acf_admin_head() {
 add_action('acf/input/admin_head', 'my_acf_admin_head');
 
 //Remove custom gutenberg blocks
-add_filter('allowed_block_types', 'misha_allowed_block_types');
+add_filter('allowed_block_types', 'theme_allowed_block_types');
 
-function misha_allowed_block_types($allowed_blocks)
+function theme_allowed_block_types($allowed_blocks)
 {
     return array(
 //        'core/image',
@@ -118,8 +118,15 @@ function misha_allowed_block_types($allowed_blocks)
         'core/heading',
         'core/list',
         'acf/banner',
+        'acf/main-banner',
+        'acf/black-banner',
+        'acf/history-block',
+        'acf/contact-us',
+        'acf/our-team',
+        'acf/location',
         'acf/expertise',
         'acf/person-card',
+        'acf/solution-card',
         'acf/competencies',
         'acf/process',
         'acf/slider',
