@@ -43,7 +43,7 @@ $button = get_field('button', 'options');
             </nav>
 			<div class="buttons-wrapper">
 				 <a class="btn-transparent" href="https://dashboard.hearstcorporation.io/" target="_blank" style="margin-right:11px">
-                    Log in
+                    Login
                 </a>
 				    <?php if ($button):
                 $link_url = $button['url'];
