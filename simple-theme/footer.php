@@ -644,6 +644,11 @@ $btnBack = get_field('btn_back', 'options');
         <?php } ?>
     </div>
 </div>
+<div class="pop-up-thank-you" id="thank-you">
+    <p>
+        Thank you for connecting with us. We will contact to you in the nearest time.
+    </p>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>
