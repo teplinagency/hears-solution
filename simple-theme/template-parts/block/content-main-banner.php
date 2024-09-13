@@ -52,7 +52,7 @@ $button = get_field('button-new', 'options');
                     </form>
                 </div>
  
-                <img src="http://hearts-solution.local/wp-content/uploads/2024/09/Frame-2147227644.png" alt="" class="main-banner__image">  
+                <img src="/wp-content/uploads/2024/09/Frame-2147227644.png" alt="" class="main-banner__image">
             </div>
         </div>
     </section>
