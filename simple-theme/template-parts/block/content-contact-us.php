@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Name: black-banner
+ * Block Name: contact us
  *
  * This is the template that displays the banner.
  */
