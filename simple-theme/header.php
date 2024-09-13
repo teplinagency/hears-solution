@@ -24,7 +24,7 @@ $button = get_field('button', 'options');
 ?> 
 <div id="wrap">
     <header class="header">
-        <div class="row1320 flex v-center">
+        <div class="container flex v-center">
             <a href="<?php echo site_url(); ?>/" id="logo" class="logo">
 				<?php if ( $logo ): ?>
                     <img src="<?php echo $logo ?>" alt="logo">
@@ -42,20 +42,38 @@ $button = get_field('button', 'options');
 				?>
             </nav>
 			<div class="buttons-wrapper">
-				 <a class="btn-transparent" href="https://dashboard.hearstcorporation.io/" target="_blank" style="margin-right:11px">
-                    Login
-                </a>
 				    <?php if ($button):
                 $link_url = $button['url'];
                 $link_title = $button['title'];
                 $link_target = $button['target'] ? $button['target'] : '_self';
                 ?>
-                <a class="btn-transparent" data-fancybox href="#" data-src="<?php echo esc_url($link_url); ?>"
+                <a class="btn-white" data-fancybox href="#" data-src="<?php echo esc_url($link_url); ?>"
                    target="<?php echo esc_attr($link_target); ?>">
                     <?php echo esc_html($link_title); ?>
+                    <svg class="ico" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 19L6 15.001V15H3C1.895 15 1 14.105 1 13V3C1 1.895 1.895 1 3 1H17C18.105 1 19 1.895 19 3V13C19 14.105 18.105 15 17 15H14L10 18.999" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 10H6" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6H14" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </a>
+				 <a class="btn-gren" href="https://dashboard.hearstcorporation.io/" target="_blank" style="margin-right:11px">
+                    Login 
+                    <svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 17V18C3 19.6569 4.34315 21 6 21H7" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17 3H18C19.6569 3 21 4.34315 21 6V7" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 3H6C4.34315 3 3 4.34315 3 6V7" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 17V18C21 19.6569 19.6569 21 18 21H17" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5 14H14.75" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.5" cy="11.5" r="2.5" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5 11.5H12" stroke="#11BA5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
                 </a>
             <?php endif; ?>
 			</div>
-        
+            <svg class="burger-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.32812 15.9951H24.6682" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.32812 21.3388H24.6682" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.32812 10.6669H24.6682" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> 
         </div>
     </header>
