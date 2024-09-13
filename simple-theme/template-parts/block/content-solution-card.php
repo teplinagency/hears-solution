@@ -48,7 +48,7 @@ $cards = get_field('cards');
 
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                     ?>
-                                    <a href="<?php echo esc_url($link_url); ?>" rel="nofollow" class="link"
+                                    <a data-fancybox href="#" data-src="<?php echo esc_url($link_url); ?>" rel="nofollow" class="link"
                                         target="<?php echo esc_attr($link_target); ?>">
                                         Learn more
                                         <svg class="ico" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

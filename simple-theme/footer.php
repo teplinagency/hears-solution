@@ -591,30 +591,80 @@ $btnBack = get_field('btn_back', 'options');
 
 </footer>
 
-<div class="pop-up-contact" id="contact-us" style="display: none;">
-    <div class="flex-wrapper">
-        <?php if ($topText || $bottomText || $btnBack) { ?>
-            <div class="left-content thank-you">
-                <div class="wrapper">
-                    <div class="top-content">
-                        <p class="above" id="name-output"></p>
-                        <?php if ($topText) { ?>
-                            <div class="top-text"><?php echo $topText; ?></div>
-                        <?php } ?>
-                    </div>
-                    <div class="bottom-content">
-                        <?php if ($bottomText) { ?>
-                            <div class="bottom-text"><?php echo $bottomText; ?></div>
-                        <?php } ?>
-                        <?php if ($btnBack): ?>
-                            <a class="btn-white" href="/">
-                                <?php echo $btnBack; ?>
-                            </a>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        <?php } ?>
+<div class="pop-up-contact" id="contact-us" style="display: none;"> 
+    <div class="close" data-fancybox-close> 
+        <svg data-fancybox-close width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2007 1.79541C13.4871 1.50903 13.4871 1.04471 13.2007 0.758321C12.9143 0.471937 12.45 0.471936 12.1636 0.758321L6.97828 5.94365L1.79318 0.758554C1.5068 0.472169 1.04248 0.472169 0.756095 0.758554C0.46971 1.04494 0.46971 1.50926 0.756094 1.79564L5.94119 6.98074L0.755624 12.1663C0.469238 12.4527 0.469239 12.917 0.755624 13.2034C1.04201 13.4898 1.50633 13.4898 1.79271 13.2034L6.97828 8.01783L12.1641 13.2036C12.4505 13.49 12.9148 13.49 13.2012 13.2036C13.4876 12.9172 13.4876 12.4529 13.2012 12.1665L8.01537 6.98074L13.2007 1.79541Z" fill="#1A1A1A"/>
+        </svg> 
+    </div>
+    <svg class="el-bg-1" width="532" height="432" viewBox="0 0 532 432" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.2">
+        <g filter="url(#filter0_f_1256_11091)">
+        <path d="M401.554 314.971L-73.6829 6.38702C-82.0337 0.964655 -78.1938 -12 -68.237 -12H4.63004C6.82394 -12 8.95697 -11.2785 10.7004 -9.94672L413.07 297.419C415.547 299.31 417 302.249 417 305.365V306.584C417 314.516 408.207 319.29 401.554 314.971Z" fill="#11BA5F"/>
+        <path d="M401.554 314.971L-73.6829 6.38702C-82.0337 0.964655 -78.1938 -12 -68.237 -12H4.63004C6.82394 -12 8.95697 -11.2785 10.7004 -9.94672L413.07 297.419C415.547 299.31 417 302.249 417 305.365V306.584C417 314.516 408.207 319.29 401.554 314.971Z" stroke="white"/>
+        </g>
+        <g filter="url(#filter1_f_1256_11091)">
+        <path d="M388.554 165.971L-86.6829 -142.613C-95.0337 -148.035 -91.1938 -161 -81.237 -161H-8.36996C-6.17606 -161 -4.04303 -160.279 -2.29959 -158.947L400.07 148.419C402.547 150.31 404 153.249 404 156.365V157.584C404 165.516 395.207 170.29 388.554 165.971Z" fill="#028BE7"/>
+        <path d="M388.554 165.971L-86.6829 -142.613C-95.0337 -148.035 -91.1938 -161 -81.237 -161H-8.36996C-6.17606 -161 -4.04303 -160.279 -2.29959 -158.947L400.07 148.419C402.547 150.31 404 153.249 404 156.365V157.584C404 165.516 395.207 170.29 388.554 165.971Z" stroke="white"/>
+        </g>
+        <g filter="url(#filter2_f_1256_11091)">
+        <path d="M245.561 134.995L-230.621 -173.608C-238.98 -179.026 -235.144 -192 -225.182 -192H-152.153C-149.962 -192 -147.832 -191.281 -146.09 -189.952L257.063 117.419C259.544 119.31 261 122.251 261 125.371V126.603C261 134.531 252.215 139.306 245.561 134.995Z" fill="#04CA95"/>
+        <path d="M245.561 134.995L-230.621 -173.608C-238.98 -179.026 -235.144 -192 -225.182 -192H-152.153C-149.962 -192 -147.832 -191.281 -146.09 -189.952L257.063 117.419C259.544 119.31 261 122.251 261 125.371V126.603C261 134.531 252.215 139.306 245.561 134.995Z" stroke="white"/>
+        </g>
+        </g>
+        <defs>
+        <filter id="filter0_f_1256_11091" x="-192.756" y="-126.5" width="724.256" height="557.601" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="57" result="effect1_foregroundBlur_1256_11091"/>
+        </filter>
+        <filter id="filter1_f_1256_11091" x="-205.756" y="-275.5" width="724.256" height="557.601" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="57" result="effect1_foregroundBlur_1256_11091"/>
+        </filter>
+        <filter id="filter2_f_1256_11091" x="-349.701" y="-306.5" width="725.201" height="557.62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="57" result="effect1_foregroundBlur_1256_11091"/>
+        </filter>
+        </defs>
+    </svg>  
+    <svg class="el-bg-2" width="539" height="364" viewBox="0 0 539 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.2">
+        <g filter="url(#filter0_f_1256_11095)">
+        <path d="M130.446 117.029L605.683 425.613C614.034 431.035 610.194 444 600.237 444H527.37C525.176 444 523.043 443.279 521.3 441.947L118.93 134.581C116.453 132.69 115 129.751 115 126.635V125.416C115 117.484 123.793 112.71 130.446 117.029Z" fill="#11BA5F"/>
+        <path d="M130.446 117.029L605.683 425.613C614.034 431.035 610.194 444 600.237 444H527.37C525.176 444 523.043 443.279 521.3 441.947L118.93 134.581C116.453 132.69 115 129.751 115 126.635V125.416C115 117.484 123.793 112.71 130.446 117.029Z" stroke="white"/>
+        </g>
+        <g filter="url(#filter1_f_1256_11095)">
+        <path d="M143.446 266.029L618.683 574.613C627.034 580.035 623.194 593 613.237 593H540.37C538.176 593 536.043 592.279 534.3 590.947L131.93 283.581C129.453 281.69 128 278.751 128 275.635V274.416C128 266.484 136.793 261.71 143.446 266.029Z" fill="#028BE7"/>
+        <path d="M143.446 266.029L618.683 574.613C627.034 580.035 623.194 593 613.237 593H540.37C538.176 593 536.043 592.279 534.3 590.947L131.93 283.581C129.453 281.69 128 278.751 128 275.635V274.416C128 266.484 136.793 261.71 143.446 266.029Z" stroke="white"/>
+        </g>
+        <g filter="url(#filter2_f_1256_11095)">
+        <path d="M286.439 297.005L762.621 605.608C770.98 611.026 767.144 624 757.182 624H684.153C681.962 624 679.832 623.281 678.09 621.952L274.937 314.581C272.456 312.69 271 309.749 271 306.629V305.397C271 297.469 279.785 292.694 286.439 297.005Z" fill="#04CA95"/>
+        <path d="M286.439 297.005L762.621 605.608C770.98 611.026 767.144 624 757.182 624H684.153C681.962 624 679.832 623.281 678.09 621.952L274.937 314.581C272.456 312.69 271 309.749 271 306.629V305.397C271 297.469 279.785 292.694 286.439 297.005Z" stroke="white"/>
+        </g>
+        </g>
+        <defs>
+        <filter id="filter0_f_1256_11095" x="0.5" y="0.899414" width="724.256" height="557.601" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="57" result="effect1_foregroundBlur_1256_11095"/>
+        </filter>
+        <filter id="filter1_f_1256_11095" x="13.5" y="149.899" width="724.256" height="557.601" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="57" result="effect1_foregroundBlur_1256_11095"/>
+        </filter>
+        <filter id="filter2_f_1256_11095" x="156.5" y="180.88" width="725.201" height="557.62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="57" result="effect1_foregroundBlur_1256_11095"/>
+        </filter>
+        </defs>
+    </svg>
+
+    <div class="flex-wrapper"> 
         <?php if ($aboveTitle || $title || $form) { ?>
             <div class="left-content cf">
                 <?php if ($aboveTitle) { ?>
@@ -623,7 +673,7 @@ $btnBack = get_field('btn_back', 'options');
                     </p>
                 <?php } ?>
                 <?php if ($title) { ?>
-                    <h2><?php echo $title; ?></h2>
+                    <h2 class="h2"><?php echo $title; ?></h2>
                 <?php } ?>
                 <?php if ($form) { ?>
                     <div class="form-wrapper">
@@ -631,24 +681,20 @@ $btnBack = get_field('btn_back', 'options');
                     </div>
                 <?php } ?>
             </div>
-        <?php } ?>
-        <?php if ($image || $logo) { ?>
-            <div class="right-content"
-                 style="<?php if ($image){ ?>background-image: url(<?php echo $image; ?>)<?php } ?>">
-                <div id="logo" class="logo">
-                    <?php if ( $logo ): ?>
-                        <img src="<?php echo $logo ?>" alt="logo">
-                    <?php endif; ?>
-                </div>
-            </div>
-        <?php } ?>
+        <?php } ?> 
     </div>
 </div>
-<div class="pop-up-thank-you" id="thank-you">
-    <p>
-        Thank you for connecting with us. We will contact to you in the nearest time.
-    </p>
+
+<div class="pop-up-thank-you" id="thank-you" style="display: none;"> 
+    <div class="close" data-fancybox-close> 
+        <svg data-fancybox-close width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2007 1.79541C13.4871 1.50903 13.4871 1.04471 13.2007 0.758321C12.9143 0.471937 12.45 0.471936 12.1636 0.758321L6.97828 5.94365L1.79318 0.758554C1.5068 0.472169 1.04248 0.472169 0.756095 0.758554C0.46971 1.04494 0.46971 1.50926 0.756094 1.79564L5.94119 6.98074L0.755624 12.1663C0.469238 12.4527 0.469239 12.917 0.755624 13.2034C1.04201 13.4898 1.50633 13.4898 1.79271 13.2034L6.97828 8.01783L12.1641 13.2036C12.4505 13.49 12.9148 13.49 13.2012 13.2036C13.4876 12.9172 13.4876 12.4529 13.2012 12.1665L8.01537 6.98074L13.2007 1.79541Z" fill="#1A1A1A"/>
+        </svg> 
+    </div>
+    <div class="titl">Thank you for connecting with us.</div>
+    <div class="desc"> We will contact to you in the nearest time.</div>
 </div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

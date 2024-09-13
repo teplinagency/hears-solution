@@ -50,6 +50,15 @@ $(document).ready(function () {
         }
     );
 
+
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+        var id = event.detail.contactFormId;
+        if ( id == 76 || id == 6 || id == 17757 ) { 
+          Fancybox.close();   
+          Fancybox.show([{ src: "#thank-you", type: "inline" }]); 
+        }
+      }, false );
+
 });
 
 
