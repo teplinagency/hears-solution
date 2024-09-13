@@ -27,7 +27,6 @@ $cards = get_field('cards');
                         $image = $card['image'];
                         $cardTitle = $card['title'];
                         $link = $card['link'];
-                        $linkTitle = $card['link_title'];
                         $solutionText = $card['solution_text'];
                         if ($image || $cardTitle || $link || $solutionText) { ?>
                             <div class="card">
