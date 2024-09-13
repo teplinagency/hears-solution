@@ -8,9 +8,10 @@
 $tag = get_field('tag');
 $title = get_field('title');
 $cards = get_field('cards');
+
 ?>
 <?php if ($tag || $title || $cards) { ?>
-    <section class="person-card" id="person-card">
+    <section class="person-card" id="<?php echo $tag == 'Expertise' ? 'expertise' : 'person-card'?>">
         <div class="container">
             <?php if ($tag) { ?>
                 <p class="above">

@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_66e0495e5ed95",
-            "label": "tab",
-            "name": "tab",
+            "label": "Tag",
+            "name": "tag",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_66e049755ed96",
-            "label": "title",
+            "label": "Title",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -44,7 +44,7 @@
         },
         {
             "key": "field_66e049805ed97",
-            "label": "persons",
+            "label": "Persons",
             "name": "persons",
             "aria-label": "",
             "type": "repeater",
