@@ -1571,3 +1571,15 @@ footer {
         }
     }
 }
+
+ @media screen and (max-width: 1400px) and (min-width: 951px) {
+     .contact_us{
+         margin-top: 80px;
+     }
+ }
+
+ @media screen and (max-width: 950px) and (min-width: 750px) {
+     .contact_us{
+         margin-top: 40px;
+     }
+ }
