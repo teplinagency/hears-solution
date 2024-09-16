@@ -1870,7 +1870,7 @@ footer .bg-el-2 {
   border: 0.5px solid #D6D6D6;
   background: linear-gradient(180deg, #FFF 0%, #F4F4F4 50.06%, #FFF 100%);
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.05);
-  padding: 50px 40px;
+  padding: 100px 40px;
 }
 .pop-up-thank-you .titl {
   color: #1A1A1A;
@@ -1899,6 +1899,33 @@ footer .bg-el-2 {
 @media (max-width: 750px) {
   .pop-up-thank-you .desc {
     font-size: 14px;
+  }
+}
+.pop-up-thank-you .close {
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 18.6px 0px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  .pop-up-thank-you .close {
+    width: 36px;
+    height: 36px;
+    right: 20px;
+    top: 20px;
+  }
+  .pop-up-thank-you .close svg {
+    width: 12px;
+    height: 12px;
   }
 }
 
