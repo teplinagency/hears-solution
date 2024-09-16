@@ -43,7 +43,7 @@ $btnBack = get_field('btn_back', 'options');
             <div class="desc">We are Leading the charge in AI, blockchain, and sustainable tech. We provide innovative solutions that shape the future of decentralized computing. Trusted by industry leaders globally, we are committed to delivering secure, scalable, and sustainable technologies that drive transformative change</div>
 
             <div class="social">
-                <a href="#">
+                <a href="https://www.instagram.com/hearst.io?igsh=MXYzcGNwdG1rb2VucQ==">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="50" height="50" rx="12.5" fill="#0B0B0B"/>
                     <rect x="0.3125" y="0.3125" width="49.375" height="49.375" rx="12.1875" stroke="white" stroke-opacity="0.2" stroke-width="0.625"/>
@@ -64,7 +64,7 @@ $btnBack = get_field('btn_back', 'options');
                     </defs>
                 </svg> 
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/hearst_io">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="50" height="50" rx="12.5" fill="#0B0B0B"/>
                         <rect x="0.3125" y="0.3125" width="49.375" height="49.375" rx="12.1875" stroke="white" stroke-opacity="0.2" stroke-width="0.625"/>
@@ -83,7 +83,7 @@ $btnBack = get_field('btn_back', 'options');
                         </defs>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/hearstio/">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="50" height="50" rx="12.5" fill="#0B0B0B"/>
                         <rect x="0.3125" y="0.3125" width="49.375" height="49.375" rx="12.1875" stroke="white" stroke-opacity="0.2" stroke-width="0.625"/>
